@@ -30,7 +30,7 @@
       const {email, password} = req.body;
       const user = await User.findOne({where: {email}});
       if(!user) {
-        return res.status(401).json({message: "Customer doesn't Exist!!"})
+        return res.status(401).json({message: "Customer doesn't Exist!!"});
       }
 
       let comparePassword = bcrypt.compareSync(password, user.password);
@@ -46,7 +46,7 @@
     async check(req, res, next) {
       const token = jwtGenerate(req.user.id, req.user.email, req.user.role);
 
-      return res.json({token})    
+      return res.json({token});    
     }
 
     async getAll(req, res) {

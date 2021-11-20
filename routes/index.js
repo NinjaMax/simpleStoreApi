@@ -11,7 +11,7 @@ router.use('/user', userRouter);
 router.use('/category', categoryRouter);
 router.use('/brand', brandRouter);
 router.use('/goods', goodsRouter);
-router.use('/basket', basketRouter)
+router.use('/basket', basketRouter);
 
 
 module.exports = router;

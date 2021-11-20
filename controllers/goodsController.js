@@ -16,7 +16,7 @@ class GoodsController {
                 {where: {id: req.body.id}});
                 return res.json({goodsUpdate});
            } catch (error) {
-               console.log("Data is incorrect!!!")
+               console.log("Data is incorrect!!!");
            } 
             
         }
